@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56CDAE911DD6006400FE5019 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */; };
 		56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */; };
-		56F912621DD5E4C900BEC84A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F912611DD5E4C900BEC84A /* ViewController.swift */; };
 		56F912651DD5E4C900BEC84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F912631DD5E4C900BEC84A /* Main.storyboard */; };
 		56F912671DD5E4C900BEC84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F912661DD5E4C900BEC84A /* Assets.xcassets */; };
 		56F9126A1DD5E4C900BEC84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F912681DD5E4C900BEC84A /* LaunchScreen.storyboard */; };
+		56F912721DD5E50100BEC84A /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F912711DD5E50100BEC84A /* BookTableViewController.swift */; };
+		56F912741DD5E59C00BEC84A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56F912731DD5E59C00BEC84A /* GoogleService-Info.plist */; };
+		56F912791DD5E6FA00BEC84A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F912781DD5E6FA00BEC84A /* Book.swift */; };
+		56F9127D1DD5F4EF00BEC84A /* AddBookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9127C1DD5F4EF00BEC84A /* AddBookTableViewController.swift */; };
+		F23CCFD540A06AA875303A69 /* Pods_AC_Exam_____APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C59904EBD7CB36C3A5DD9E7 /* Pods_AC_Exam_____APP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1735E3E10CF2C90B066118F0 /* Pods-AC_Exam_文青讀書APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC_Exam_文青讀書APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-AC_Exam_文青讀書APP/Pods-AC_Exam_文青讀書APP.release.xcconfig"; sourceTree = "<group>"; };
+		3C59904EBD7CB36C3A5DD9E7 /* Pods_AC_Exam_____APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AC_Exam_____APP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		56F9125C1DD5E4C900BEC84A /* AC_Exam_文青讀書APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC_Exam_文青讀書APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56F912611DD5E4C900BEC84A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56F912641DD5E4C900BEC84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56F912661DD5E4C900BEC84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56F912691DD5E4C900BEC84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56F9126B1DD5E4C900BEC84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F912711DD5E50100BEC84A /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewController.swift; sourceTree = "<group>"; };
+		56F912731DD5E59C00BEC84A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		56F912781DD5E6FA00BEC84A /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		56F9127C1DD5F4EF00BEC84A /* AddBookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookTableViewController.swift; sourceTree = "<group>"; };
+		FCAB9A66E1284698EE2E10EB /* Pods-AC_Exam_文青讀書APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC_Exam_文青讀書APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AC_Exam_文青讀書APP/Pods-AC_Exam_文青讀書APP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23CCFD540A06AA875303A69 /* Pods_AC_Exam_____APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2427C84476C3183AD8D387E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C59904EBD7CB36C3A5DD9E7 /* Pods_AC_Exam_____APP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5598D55B9929F7F80DE733F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCAB9A66E1284698EE2E10EB /* Pods-AC_Exam_文青讀書APP.debug.xcconfig */,
+				1735E3E10CF2C90B066118F0 /* Pods-AC_Exam_文青讀書APP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		56F912531DD5E4C900BEC84A = {
 			isa = PBXGroup;
 			children = (
 				56F9125E1DD5E4C900BEC84A /* AC_Exam_文青讀書APP */,
 				56F9125D1DD5E4C900BEC84A /* Products */,
+				5598D55B9929F7F80DE733F5 /* Pods */,
+				2427C84476C3183AD8D387E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,58 @@
 		56F9125E1DD5E4C900BEC84A /* AC_Exam_文青讀書APP */ = {
 			isa = PBXGroup;
 			children = (
-				56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */,
-				56F912611DD5E4C900BEC84A /* ViewController.swift */,
-				56F912631DD5E4C900BEC84A /* Main.storyboard */,
+				56F9127A1DD5E70100BEC84A /* Modals */,
+				56F9127B1DD5E70A00BEC84A /* Controllers */,
+				56F912761DD5E68A00BEC84A /* Layouts */,
 				56F912661DD5E4C900BEC84A /* Assets.xcassets */,
-				56F912681DD5E4C900BEC84A /* LaunchScreen.storyboard */,
-				56F9126B1DD5E4C900BEC84A /* Info.plist */,
+				56F912751DD5E66900BEC84A /* Supporting Files */,
+				56F912771DD5E6AD00BEC84A /* Others */,
 			);
 			path = "AC_Exam_文青讀書APP";
+			sourceTree = "<group>";
+		};
+		56F912751DD5E66900BEC84A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56F912731DD5E59C00BEC84A /* GoogleService-Info.plist */,
+				56F9126B1DD5E4C900BEC84A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56F912761DD5E68A00BEC84A /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				56F912631DD5E4C900BEC84A /* Main.storyboard */,
+				56F912681DD5E4C900BEC84A /* LaunchScreen.storyboard */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		56F912771DD5E6AD00BEC84A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		56F9127A1DD5E70100BEC84A /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				56F912781DD5E6FA00BEC84A /* Book.swift */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		56F9127B1DD5E70A00BEC84A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56F912711DD5E50100BEC84A /* BookTableViewController.swift */,
+				56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */,
+				56F9127C1DD5F4EF00BEC84A /* AddBookTableViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56F9126E1DD5E4C900BEC84A /* Build configuration list for PBXNativeTarget "AC_Exam_文青讀書APP" */;
 			buildPhases = (
+				293AFF346A77A6541EF084B0 /* [CP] Check Pods Manifest.lock */,
 				56F912581DD5E4C900BEC84A /* Sources */,
 				56F912591DD5E4C900BEC84A /* Frameworks */,
 				56F9125A1DD5E4C900BEC84A /* Resources */,
+				1D8A4F04CCB7C380C0A35E3F /* [CP] Embed Pods Frameworks */,
+				F4AE3FDE616AE98B92AA9EE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F9126A1DD5E4C900BEC84A /* LaunchScreen.storyboard in Resources */,
+				56F912741DD5E59C00BEC84A /* GoogleService-Info.plist in Resources */,
 				56F912671DD5E4C900BEC84A /* Assets.xcassets in Resources */,
 				56F912651DD5E4C900BEC84A /* Main.storyboard in Resources */,
 			);
@@ -132,13 +212,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D8A4F04CCB7C380C0A35E3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AC_Exam_文青讀書APP/Pods-AC_Exam_文青讀書APP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293AFF346A77A6541EF084B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4AE3FDE616AE98B92AA9EE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AC_Exam_文青讀書APP/Pods-AC_Exam_文青讀書APP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56F912581DD5E4C900BEC84A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F912621DD5E4C900BEC84A /* ViewController.swift in Sources */,
+				56F9127D1DD5F4EF00BEC84A /* AddBookTableViewController.swift in Sources */,
+				56F912721DD5E50100BEC84A /* BookTableViewController.swift in Sources */,
 				56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */,
+				56CDAE911DD6006400FE5019 /* BookTableViewCell.swift in Sources */,
+				56F912791DD5E6FA00BEC84A /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +388,7 @@
 		};
 		56F9126F1DD5E4C900BEC84A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCAB9A66E1284698EE2E10EB /* Pods-AC_Exam_文青讀書APP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8H7X36TF25;
@@ -270,6 +402,7 @@
 		};
 		56F912701DD5E4C900BEC84A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1735E3E10CF2C90B066118F0 /* Pods-AC_Exam_文青讀書APP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8H7X36TF25;
@@ -300,6 +433,7 @@
 				56F912701DD5E4C900BEC84A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

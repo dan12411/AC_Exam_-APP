@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */; };
+		56F912621DD5E4C900BEC84A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F912611DD5E4C900BEC84A /* ViewController.swift */; };
+		56F912651DD5E4C900BEC84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F912631DD5E4C900BEC84A /* Main.storyboard */; };
+		56F912671DD5E4C900BEC84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56F912661DD5E4C900BEC84A /* Assets.xcassets */; };
+		56F9126A1DD5E4C900BEC84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F912681DD5E4C900BEC84A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		56F9125C1DD5E4C900BEC84A /* AC_Exam_文青讀書APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC_Exam_文青讀書APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56F912611DD5E4C900BEC84A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56F912641DD5E4C900BEC84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56F912661DD5E4C900BEC84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56F912691DD5E4C900BEC84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56F9126B1DD5E4C900BEC84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56F912591DD5E4C900BEC84A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56F912531DD5E4C900BEC84A = {
+			isa = PBXGroup;
+			children = (
+				56F9125E1DD5E4C900BEC84A /* AC_Exam_文青讀書APP */,
+				56F9125D1DD5E4C900BEC84A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56F9125D1DD5E4C900BEC84A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56F9125C1DD5E4C900BEC84A /* AC_Exam_文青讀書APP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56F9125E1DD5E4C900BEC84A /* AC_Exam_文青讀書APP */ = {
+			isa = PBXGroup;
+			children = (
+				56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */,
+				56F912611DD5E4C900BEC84A /* ViewController.swift */,
+				56F912631DD5E4C900BEC84A /* Main.storyboard */,
+				56F912661DD5E4C900BEC84A /* Assets.xcassets */,
+				56F912681DD5E4C900BEC84A /* LaunchScreen.storyboard */,
+				56F9126B1DD5E4C900BEC84A /* Info.plist */,
+			);
+			path = "AC_Exam_文青讀書APP";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56F9125B1DD5E4C900BEC84A /* AC_Exam_文青讀書APP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56F9126E1DD5E4C900BEC84A /* Build configuration list for PBXNativeTarget "AC_Exam_文青讀書APP" */;
+			buildPhases = (
+				56F912581DD5E4C900BEC84A /* Sources */,
+				56F912591DD5E4C900BEC84A /* Frameworks */,
+				56F9125A1DD5E4C900BEC84A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC_Exam_文青讀書APP";
+			productName = "AC_Exam_文青讀書APP";
+			productReference = 56F9125C1DD5E4C900BEC84A /* AC_Exam_文青讀書APP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56F912541DD5E4C900BEC84A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "洪德晟";
+				TargetAttributes = {
+					56F9125B1DD5E4C900BEC84A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8H7X36TF25;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 56F912571DD5E4C900BEC84A /* Build configuration list for PBXProject "AC_Exam_文青讀書APP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56F912531DD5E4C900BEC84A;
+			productRefGroup = 56F9125D1DD5E4C900BEC84A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56F9125B1DD5E4C900BEC84A /* AC_Exam_文青讀書APP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56F9125A1DD5E4C900BEC84A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F9126A1DD5E4C900BEC84A /* LaunchScreen.storyboard in Resources */,
+				56F912671DD5E4C900BEC84A /* Assets.xcassets in Resources */,
+				56F912651DD5E4C900BEC84A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56F912581DD5E4C900BEC84A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56F912621DD5E4C900BEC84A /* ViewController.swift in Sources */,
+				56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56F912631DD5E4C900BEC84A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F912641DD5E4C900BEC84A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56F912681DD5E4C900BEC84A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56F912691DD5E4C900BEC84A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56F9126C1DD5E4C900BEC84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56F9126D1DD5E4C900BEC84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56F9126F1DD5E4C900BEC84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8H7X36TF25;
+				INFOPLIST_FILE = "AC_Exam_文青讀書APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.ALPHAcamp.AC-Exam-----APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		56F912701DD5E4C900BEC84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8H7X36TF25;
+				INFOPLIST_FILE = "AC_Exam_文青讀書APP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.ALPHAcamp.AC-Exam-----APP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56F912571DD5E4C900BEC84A /* Build configuration list for PBXProject "AC_Exam_文青讀書APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F9126C1DD5E4C900BEC84A /* Debug */,
+				56F9126D1DD5E4C900BEC84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56F9126E1DD5E4C900BEC84A /* Build configuration list for PBXNativeTarget "AC_Exam_文青讀書APP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F9126F1DD5E4C900BEC84A /* Debug */,
+				56F912701DD5E4C900BEC84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56F912541DD5E4C900BEC84A /* Project object */;
+}

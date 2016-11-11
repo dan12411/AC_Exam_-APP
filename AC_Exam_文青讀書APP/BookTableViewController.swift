@@ -15,6 +15,12 @@ class BookTableViewController: UITableViewController {
     var books: [Book] = []
     var ref: FIRDatabaseReference?
     
+    // 下拉更新
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

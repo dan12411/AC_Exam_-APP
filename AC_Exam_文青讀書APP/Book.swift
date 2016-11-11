@@ -12,7 +12,7 @@ import Firebase
 class Book {
     let key: String
     let ref: FIRDatabaseReference?
-    let createdAt: String
+    var createdAt = ""
     var name = ""
     var photo = ""
     var address = ""
@@ -20,7 +20,7 @@ class Book {
     var website = ""
     var description = ""
     
-    init (key: String = "", createdAt: String = "", name: String, photo: String, address: String, phone: String, website : String, description: String) {
+    init (key: String = "", createdAt: String, name: String, photo: String, address: String, phone: String, website : String, description: String) {
         self.key = key
         self.ref = nil
         self.createdAt = createdAt

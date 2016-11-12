@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		566C7A7E1DD62348006D80FA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566C7A7D1DD62348006D80FA /* DetailTableViewController.swift */; };
 		56CDAE911DD6006400FE5019 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */; };
 		56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */; };
 		56F912651DD5E4C900BEC84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F912631DD5E4C900BEC84A /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		1735E3E10CF2C90B066118F0 /* Pods-AC_Exam_文青讀書APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC_Exam_文青讀書APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-AC_Exam_文青讀書APP/Pods-AC_Exam_文青讀書APP.release.xcconfig"; sourceTree = "<group>"; };
 		3C59904EBD7CB36C3A5DD9E7 /* Pods_AC_Exam_____APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AC_Exam_____APP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		566C7A7D1DD62348006D80FA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		56F9125C1DD5E4C900BEC84A /* AC_Exam_文青讀書APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC_Exam_文青讀書APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				56F912711DD5E50100BEC84A /* BookTableViewController.swift */,
 				56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */,
 				56F9127C1DD5F4EF00BEC84A /* AddBookTableViewController.swift */,
+				566C7A7D1DD62348006D80FA /* DetailTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566C7A7E1DD62348006D80FA /* DetailTableViewController.swift in Sources */,
 				56F9127D1DD5F4EF00BEC84A /* AddBookTableViewController.swift in Sources */,
 				56F912721DD5E50100BEC84A /* BookTableViewController.swift in Sources */,
 				56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */,

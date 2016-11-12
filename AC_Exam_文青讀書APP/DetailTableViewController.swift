@@ -1,52 +1,34 @@
 //
-//  AddBookTableViewController.swift
+//  DetailTableViewController.swift
 //  AC_Exam_文青讀書APP
 //
-//  Created by 洪德晟 on 2016/11/11.
+//  Created by 洪德晟 on 2016/11/12.
 //  Copyright © 2016年 洪德晟. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class AddBookTableViewController: UITableViewController {
-    
-    let ref = FIRDatabase.database().reference(withPath: "AC-books")
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var photoTextField: UITextField!
+class DetailTableViewController: UITableViewController {
 
-    @IBAction func back(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+    var book: Book?
     
-    @IBAction func save(_ sender: Any) {
-        // 1. 取得使用者輸入的標題
-        guard let text = nameTextField.text else { return }
-        guard let text2 = photoTextField.text else { return }
-        
-        // 2. 新增item
-        let date = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy年M月d日 hh:mm:ss"
-        let curTime = dateFormatter.string(from: date)
-        let bookItem = Book(key: "", createdAt: curTime, name: text, photo: text2, address: "", phone: "", website: "", description: "")
-//        let bookItem = Book(name: text, photo: text2, address: "", phone: "", website: "", description: "")
-        
-        // 3. 指定存入的路徑
-        let bookItemRef = self.ref.child(text.lowercased())
-        // 4. 存入項目(Use setValue(_:) to save data to the database)
-        bookItemRef.setValue(bookItem.toAnyObject())
-        // 5. 回到主畫面
-        dismiss(animated: true, completion: nil)
-    }
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var bookImage: UIImageView!
+    @IBOutlet weak var test: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        nameLabel.text = book?.name
+        bookImage.image = UIImage(named: (book?.photo)!)
+       
         // Remove the separators of the empty rows
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         // Change the color of the separator
-        tableView.separatorColor = UIColor.white
+        tableView.separatorColor = UIColor.clear
+        // Cell 自動調整列高(未成功)
+        tableView.estimatedRowHeight = 50.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,7 +45,7 @@ class AddBookTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 7
+        return 6
     }
 
     /*
@@ -121,12 +103,4 @@ class AddBookTableViewController: UITableViewController {
     }
     */
 
-}
-
-// 收鍵盤
-extension AddBookTableViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return true
-    }
 }

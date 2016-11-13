@@ -21,45 +21,71 @@ class BookTableViewController: UITableViewController {
         self.refreshControl?.endRefreshing()
     }
     
+    // For judge Network Reachabillity
+    let reachability = Reachability(hostName: "www.apple.com")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = editButtonItem
         
-        //MARK: - Retrieving Data (取得資料!!)
-        //When the change occurs, the database updates the app with the most recent data.
-        ref = FIRDatabase.database().reference(withPath: "AC-books")
-        // 1. Attach a listener to receive updates
-        ref?.observe(.value, with: { snapshot in
-            // 2. Store the latest version of the data in a local variable
-            var newItems: [Book] = []
-            
-            // 3. loop through the grocery items
-            for item in snapshot.children {
-                // 4.
-                let bookItem = Book(snapshot: item as! FIRDataSnapshot)
-                newItems.append(bookItem)
-            }
-            
-            // 5. Reassign items to the latest version of the data
-            self.books = newItems
-            self.tableView.reloadData()
-        })
+        // Start Detecting Network
+        reachability?.startNotifier()
         
-        //MARK: - Sorting the Grocery List(排序資料!!)
-        // call queryOrdered(byChild:) on the Firebase reference, which takes a key to order by.
-        ref?.queryOrdered(byChild: "createdAt").observe(.value, with: { snapshot in
-            var newItems: [Book] = []
-            
-            for item in snapshot.children {
-                let bookItem = Book(snapshot: item as! FIRDataSnapshot)
-                newItems.append(bookItem)
+        
+        // Judge Nework is available or not
+        if let currentStatus = reachability?.currentReachabilityStatus() {
+            if currentStatus.rawValue == 0 {
+                
+//                print("********** No Network!!")
+                
+                let alet = UIAlertController(title: "目前網路處於斷線狀態", message: "", preferredStyle: .alert)
+                
+                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                
+                alet.addAction(cancelAction)
+                
+                present(alet, animated: true, completion: nil)
+                
+                return
+            } else {
+//                print("********** Network ok!!")
+                //MARK: - Retrieving Data (取得資料!!)
+                //When the change occurs, the database updates the app with the most recent data.
+                ref = FIRDatabase.database().reference(withPath: "AC-books")
+                // 1. Attach a listener to receive updates
+                ref?.observe(.value, with: { snapshot in
+                    // 2. Store the latest version of the data in a local variable
+                    var newItems: [Book] = []
+                    
+                    // 3. loop through the grocery items
+                    for item in snapshot.children {
+                        // 4.
+                        let bookItem = Book(snapshot: item as! FIRDataSnapshot)
+                        newItems.append(bookItem)
+                    }
+                    
+                    // 5. Reassign items to the latest version of the data
+                    self.books = newItems
+                    self.tableView.reloadData()
+                })
+                
+                //MARK: - Sorting the Grocery List(排序資料!!)
+                // call queryOrdered(byChild:) on the Firebase reference, which takes a key to order by.
+                ref?.queryOrdered(byChild: "createdAt").observe(.value, with: { snapshot in
+                    var newItems: [Book] = []
+                    
+                    for item in snapshot.children {
+                        let bookItem = Book(snapshot: item as! FIRDataSnapshot)
+                        newItems.append(bookItem)
+                    }
+                    
+                    self.books = newItems
+                    self.books = self.books.reversed()
+                    self.tableView.reloadData()
+                })
             }
-            
-            self.books = newItems
-            self.books = self.books.reversed()
-            self.tableView.reloadData()
-        })
+        }
     }
     
     @IBAction func addBook(_ sender: UIBarButtonItem) {
@@ -130,15 +156,15 @@ class BookTableViewController: UITableViewController {
      */
     
     
-     // MARK: - Navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let dvc = segue.destination as? DetailTableViewController
                 dvc?.book = books[indexPath.row]
             }
         }
-     }
-     
+    }
+    
     
 }

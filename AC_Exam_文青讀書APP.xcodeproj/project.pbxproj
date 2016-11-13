@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		566C7A7E1DD62348006D80FA /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566C7A7D1DD62348006D80FA /* DetailTableViewController.swift */; };
+		568244461DD8883B00590690 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568244451DD8883B00590690 /* MapKit.framework */; };
+		568244481DD889C500590690 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568244471DD889C500590690 /* MapViewController.swift */; };
+		5682444A1DD88D6E00590690 /* BookPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568244491DD88D6E00590690 /* BookPhotoViewController.swift */; };
+		5682444E1DD8913700590690 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5682444D1DD8913700590690 /* Reachability.m */; };
 		56CDAE911DD6006400FE5019 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */; };
 		56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */; };
 		56F912651DD5E4C900BEC84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F912631DD5E4C900BEC84A /* Main.storyboard */; };
@@ -24,6 +28,12 @@
 		1735E3E10CF2C90B066118F0 /* Pods-AC_Exam_文青讀書APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AC_Exam_文青讀書APP.release.xcconfig"; path = "Pods/Target Support Files/Pods-AC_Exam_文青讀書APP/Pods-AC_Exam_文青讀書APP.release.xcconfig"; sourceTree = "<group>"; };
 		3C59904EBD7CB36C3A5DD9E7 /* Pods_AC_Exam_____APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_AC_Exam_____APP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566C7A7D1DD62348006D80FA /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		568244451DD8883B00590690 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		568244471DD889C500590690 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		568244491DD88D6E00590690 /* BookPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookPhotoViewController.swift; sourceTree = "<group>"; };
+		5682444B1DD8913600590690 /* AC_Exam_文青讀書APP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AC_Exam_文青讀書APP-Bridging-Header.h"; sourceTree = "<group>"; };
+		5682444C1DD8913700590690 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5682444D1DD8913700590690 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		56F9125C1DD5E4C900BEC84A /* AC_Exam_文青讀書APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC_Exam_文青讀書APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F9125F1DD5E4C900BEC84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568244461DD8883B00590690 /* MapKit.framework in Frameworks */,
 				F23CCFD540A06AA875303A69 /* Pods_AC_Exam_____APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +64,7 @@
 		2427C84476C3183AD8D387E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				568244451DD8883B00590690 /* MapKit.framework */,
 				3C59904EBD7CB36C3A5DD9E7 /* Pods_AC_Exam_____APP.framework */,
 			);
 			name = Frameworks;
@@ -101,8 +113,11 @@
 		56F912751DD5E66900BEC84A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5682444C1DD8913700590690 /* Reachability.h */,
+				5682444D1DD8913700590690 /* Reachability.m */,
 				56F912731DD5E59C00BEC84A /* GoogleService-Info.plist */,
 				56F9126B1DD5E4C900BEC84A /* Info.plist */,
+				5682444B1DD8913600590690 /* AC_Exam_文青讀書APP-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,6 +154,8 @@
 				56CDAE901DD6006400FE5019 /* BookTableViewCell.swift */,
 				56F9127C1DD5F4EF00BEC84A /* AddBookTableViewController.swift */,
 				566C7A7D1DD62348006D80FA /* DetailTableViewController.swift */,
+				568244471DD889C500590690 /* MapViewController.swift */,
+				568244491DD88D6E00590690 /* BookPhotoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -179,7 +196,13 @@
 					56F9125B1DD5E4C900BEC84A = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8H7X36TF25;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -272,8 +295,11 @@
 				56F9127D1DD5F4EF00BEC84A /* AddBookTableViewController.swift in Sources */,
 				56F912721DD5E50100BEC84A /* BookTableViewController.swift in Sources */,
 				56F912601DD5E4C900BEC84A /* AppDelegate.swift in Sources */,
+				5682444A1DD88D6E00590690 /* BookPhotoViewController.swift in Sources */,
 				56CDAE911DD6006400FE5019 /* BookTableViewCell.swift in Sources */,
 				56F912791DD5E6FA00BEC84A /* Book.swift in Sources */,
+				5682444E1DD8913700590690 /* Reachability.m in Sources */,
+				568244481DD889C500590690 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,11 +421,14 @@
 			baseConfigurationReference = FCAB9A66E1284698EE2E10EB /* Pods-AC_Exam_文青讀書APP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8H7X36TF25;
 				INFOPLIST_FILE = "AC_Exam_文青讀書APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.ALPHAcamp.AC-Exam-----APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AC_Exam_文青讀書APP/AC_Exam_文青讀書APP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,11 +439,13 @@
 			baseConfigurationReference = 1735E3E10CF2C90B066118F0 /* Pods-AC_Exam_文青讀書APP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8H7X36TF25;
 				INFOPLIST_FILE = "AC_Exam_文青讀書APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.ALPHAcamp.AC-Exam-----APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AC_Exam_文青讀書APP/AC_Exam_文青讀書APP-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

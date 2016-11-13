@@ -32,6 +32,15 @@ class DetailTableViewController: UITableViewController {
         }
     }
     
+    // make a phone call (not support at simulator)
+    @IBAction func phoneCall(_ sender: Any) {
+        if let book = book {
+            if let url = NSURL(string: "tel://\(book.phone)"), UIApplication.shared.canOpenURL(url as URL) {
+                UIApplication.shared.openURL(url as URL)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

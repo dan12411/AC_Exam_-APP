@@ -35,7 +35,7 @@ class AddBookTableViewController: UITableViewController {
         // 2. 新增item
         let date = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy年M月d日 hh:mm:ss"
+        dateFormatter.dateFormat = "yyyy年M月d日 HH:mm:ss"
         let curTime = dateFormatter.string(from: date)
         let bookItem = Book(key: "", createdAt: curTime, name: text, photo: text2, address: text3, phone: text4, website: text6, description: text6)
 //        let bookItem = Book(name: text, photo: text2, address: "", phone: "", website: "", description: "")

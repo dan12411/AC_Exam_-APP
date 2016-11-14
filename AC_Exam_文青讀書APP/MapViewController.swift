@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     var book: Book?
     
@@ -33,7 +33,7 @@ class MapViewController: UIViewController {
                 
                 if (places?.count)! > 0 {
                     let placeMark = places?.first
-                    print("Location: \(placeMark?.location)")
+                    print("====Location: \(placeMark?.location)====")
                     
                     // 加大頭針
                     let annotation = MKPointAnnotation()
@@ -41,6 +41,7 @@ class MapViewController: UIViewController {
                     annotation.subtitle = "GGG"
                     annotation.coordinate = (placeMark?.location?.coordinate)!
                     self.myMap.addAnnotation(annotation)
+                    
                 }
             }
         }
@@ -80,11 +81,11 @@ extension MapViewController: MKMapViewDelegate {
                 let placeMark = places?.first
                 
                 for (key, value) in (placeMark?.addressDictionary)! {
-                    print("key: \(key), value: \(value)")
+                    print("======key: \(key), value: \(value)=====")
                 }
                 let addressArray = placeMark?.addressDictionary?["FormattedAddressLines"] as! [String]
                 for address in addressArray {
-                    print("Address: \(address)")
+                    print("=====Address: \(address)======")
                 }
             }
         }

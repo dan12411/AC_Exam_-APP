@@ -14,6 +14,10 @@ class AddBookTableViewController: UITableViewController {
     let ref = FIRDatabase.database().reference(withPath: "AC-books")
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var webTextField: UITextField!
+    @IBOutlet weak var desTextField: UITextField!
 
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -23,13 +27,17 @@ class AddBookTableViewController: UITableViewController {
         // 1. 取得使用者輸入的標題
         guard let text = nameTextField.text else { return }
         guard let text2 = photoTextField.text else { return }
+        guard let text3 = addressTextField.text else { return }
+        guard let text4 = phoneTextField.text else { return }
+        guard let text5 = webTextField.text else { return }
+        guard let text6 = desTextField.text else { return }
         
         // 2. 新增item
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy年M月d日 hh:mm:ss"
         let curTime = dateFormatter.string(from: date)
-        let bookItem = Book(key: "", createdAt: curTime, name: text, photo: text2, address: "", phone: "", website: "", description: "")
+        let bookItem = Book(key: "", createdAt: curTime, name: text, photo: text2, address: text3, phone: text4, website: text6, description: text6)
 //        let bookItem = Book(name: text, photo: text2, address: "", phone: "", website: "", description: "")
         
         // 3. 指定存入的路徑
